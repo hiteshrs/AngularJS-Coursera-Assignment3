@@ -1,0 +1,18 @@
+<table>
+    <thead ng-show="items.length">
+        <tr>
+            <th>Item Name</th>
+            <th>Item Short Name</th>
+            <th>Item Name</th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in items">
+            <td>{{item.name}}</td>
+            <td>{{item.short_name}}</td>
+            <td>{{item.description}}</td>
+            <td><button class="btn btn-primary" ng-click="onRemove({index: $index})">Don't want this one!</button></td>
+        </tr>
+    </tbody>
+</table>
